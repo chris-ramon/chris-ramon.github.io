@@ -4,7 +4,13 @@ body {
 }
 
 ul li {
-  line-height: 1.3em;
+    line-height: 1.2em;
+}
+
+@media (max-width: 768px) {
+  ul li {
+    line-height: 1.5em;
+  }
 }
 
 .avatar {
