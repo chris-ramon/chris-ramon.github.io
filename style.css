@@ -3,14 +3,14 @@ body {
 	margin: 0;
 }
 .main-header {
-	background-image: url("https://ustunozgur.com/images/xyz.jpg");
-	background-repeat:no-repeat;
+	background-image: url("/bg.jpg");
+	background-repeat: no-repeat;
 	background-size: cover;
-	height: 60vh;
-	padding-top: 400px;
+	height: 65vh;
+	padding-top: 380px;
 }
 .header {
-	background: rgba(0, 0, 0, 0.4);
+	background: rgba(0, 0, 0, 0.6);
 	width: 38%;
 	margin: 0 auto;
 	padding: 8px;
