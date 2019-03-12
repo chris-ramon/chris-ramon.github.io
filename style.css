@@ -49,8 +49,8 @@ body {
 .items .item:not(:last-of-type) {
 	margin: 0 0 70px 0;
 }
-.items .item .fa {
-	color: #4B83E7;
+.items .item .fa, .items .item .fab {
+	color: #73725E;
 }
 .items .item .title {
 	padding: 16px 0 8px 0;
