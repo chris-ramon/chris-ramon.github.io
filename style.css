@@ -49,7 +49,7 @@ body {
 .items .item:not(:last-of-type) {
 	margin: 0 0 70px 0;
 }
-.items .item .fa, .items .item .fab {
+.items .item .fa, .items .item .fab, .items .item .fas {
 	color: #73725E;
 }
 .items .item .title {
