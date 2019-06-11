@@ -70,6 +70,12 @@ body {
 .items .item .fa, .items .item .fab, .items .item .fas {
 	color: #73725E;
 }
+.items .item .fa-graphql {
+	border: 1px solid orange;
+	height: 64px;
+	background: url("/graphql.svg");
+	background-repeat: no-repeat;
+}
 .items .item .title {
 	padding: 16px 0 8px 0;
 	font-weight: bold;
