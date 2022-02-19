@@ -8,7 +8,7 @@ import (
 	"embed"
 )
 
-//go:embed public/index.html public/style.css
+//go:embed public/index.html public/style.css public/bg.jpg public/graphql.svg
 var f embed.FS
 
 func main() {
@@ -35,6 +35,30 @@ func main() {
 		}
 
 		w.Header().Add("Content-Type", "text/css")
+		w.Write(b)
+	})
+
+	mux.HandleFunc("/bg.jpg", func(w http.ResponseWriter, r *http.Request) {
+		b, err := f.ReadFile("public/bg.jpg")
+		if err != nil {
+			log.Printf("failed to find file: %v", err)
+			w.Write([]byte("We'll back soon ..."))
+			return
+		}
+
+		w.Header().Add("Content-Type", "image/png")
+		w.Write(b)
+	})
+
+	mux.HandleFunc("/graphql.svg", func(w http.ResponseWriter, r *http.Request) {
+		b, err := f.ReadFile("public/graphql.svg")
+		if err != nil {
+			log.Printf("failed to find file: %v", err)
+			w.Write([]byte("We'll back soon ..."))
+			return
+		}
+
+		w.Header().Add("Content-Type", "image/svg+xml")
 		w.Write(b)
 	})
 
