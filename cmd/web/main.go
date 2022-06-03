@@ -22,6 +22,7 @@ func main() {
 			return
 		}
 
+		w.Header().Add("Access-Control-Allow-Origin", "https://use.fontawesome.com")
 		w.Header().Add("Content-Type", "text/html; charset=utf-8")
 		w.Write(b)
 	})
